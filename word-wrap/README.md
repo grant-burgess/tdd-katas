@@ -14,12 +14,12 @@ Wraps a sentence based on the input length.
   - wrap length 1 - single character
   - wrap length 3 - single character
 - should wrap
-  - wrap length 1 - 2 characters with no spaces i.e. `"xx"        -> "x\nx"`
-  - wrap length 1 - 3 characters with no spaces i.e. `"xxx"       -> "x\nx\nx"`
-  - wrap length 1 - 3 characters with spaces    i.e. `"x x x"     -> "x\nx\nx"`
-  - wrap length 3 - 4 characters with one space i.e. `"x xxx"     -> "x\nxxx"`
-  - wrap length 4 - wrap at space               i.e. `"word word" -> "word\nword"`
-  - wrap length 5 - back track to first space   i.e. `"word word" -> "word\nword"`
+  - wrap length 1 - 2 characters with no spaces` i.e. "xx"        -> "x\nx"`
+  - wrap length 1 - 3 characters with no spaces` i.e. "xxx"       -> "x\nx\nx"`
+  - wrap length 1 - 3 characters with spaces`    i.e. "x x x"     -> "x\nx\nx"`
+  - wrap length 3 - 4 characters with one space` i.e. "x xxx"     -> "x\nxxx"`
+  - wrap length 4 - wrap at space`               i.e. "word word" -> "word\nword"`
+  - wrap length 5 - back track to first space`   i.e. "word word" -> "word\nword"`
   - integration - wrap length 83
   input
   ```
