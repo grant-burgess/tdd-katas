@@ -2,8 +2,8 @@
 
 Simple tennis game score calculator. Only takes into account a single set.
 
-- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/tennis/src/main/java/com/grantburgess/Game.java)
-- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/tennis/src/test/java/com/grantburgess/GameTest.java)
+- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/tennis/src/main/java/com/grantburgess/tennis/Game.java)
+- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/tennis/src/test/java/com/grantburgess/tennis/GameTest.java)
 
 ### Tests
 - love all
