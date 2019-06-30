@@ -8,6 +8,7 @@ import java.io.PrintStream;
 import java.text.MessageFormat;
 
 public class GameUI {
+    public static final String DELIMITER = " ";
     private final InputStream in;
     private final PrintStream out;
     private Game game;
@@ -42,7 +43,7 @@ public class GameUI {
 
     private String renderCell(int x, int y) {
         Game.Player player = game.board.cells[x][y];
-        return player == null ? " " : player.toString();
+        return player == null ? DELIMITER : player.toString();
     }
 
     public void promptForMove() {
@@ -57,7 +58,7 @@ public class GameUI {
             validateInput(unparsedInput);
 
             String[] inputString = splitInput(unparsedInput);
-            Game.Board.Coordinate coordinates = parseCoordinates(inputString);
+            Board.Coordinate coordinates = parseCoordinates(inputString);
             game.crossMoves(coordinates);
         } catch (IOException e) {
             e.printStackTrace();
@@ -90,11 +91,11 @@ public class GameUI {
         }
     }
 
-    private Game.Board.Coordinate parseCoordinates(String[] coordinates) {
+    private Board.Coordinate parseCoordinates(String[] coordinates) {
         int x = Integer.parseInt(coordinates[0]);
         int y = Integer.parseInt(coordinates[1]);
 
-        return new Game.Board.Coordinate(x, y);
+        return new Board.Coordinate(x, y);
     }
 
     public class BadInput extends RuntimeException { }

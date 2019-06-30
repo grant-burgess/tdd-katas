@@ -19,7 +19,7 @@ public class GameUITest {
     private GameUI gameUI;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         gameUI = new GameUI(System.in, System.out);
     }
 

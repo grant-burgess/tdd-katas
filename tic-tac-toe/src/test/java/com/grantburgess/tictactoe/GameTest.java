@@ -16,9 +16,9 @@ public class GameTest {
 
     private void makeMoveFor(Game.Player player, int x, int y) {
         if (CROSS.equals(player))
-            game.crossMoves(new Game.Board.Coordinate(x, y));
+            game.crossMoves(new Board.Coordinate(x, y));
         else
-            game.naughtMoves(new Game.Board.Coordinate(x, y));
+            game.naughtMoves(new Board.Coordinate(x, y));
     }
 
     private void playDraw() {
@@ -61,18 +61,18 @@ public class GameTest {
         makeMoveFor(CROSS, 0, 1);
     }
 
-    @Test(expected = Game.Board.CellTaken.class)
+    @Test(expected = Board.CellTaken.class)
     public void cannot_play_same_cell() {
         makeMoveFor(CROSS, 0, 0);
         makeMoveFor(NAUGHT, 0, 0);
     }
 
-    @Test(expected = Game.Board.MoveOutOfBounds.class)
+    @Test(expected = Board.MoveOutOfBounds.class)
     public void coordinates_cannot_be_outside_board() {
         makeMoveFor(CROSS, 3, 0);
     }
 
-    @Test(expected = Game.Board.MoveOutOfBounds.class)
+    @Test(expected = Board.MoveOutOfBounds.class)
     public void coordinates_cannot_be_negative() {
         makeMoveFor(CROSS, 0, -1);
     }
