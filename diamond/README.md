@@ -14,7 +14,7 @@ Demonstrates how to incrementally build and test instead of "going for the gold"
 - test outer space
   - size 2 - 1st row has one space at each side `-X-`
   - size 3 - 1st row has two spaces at each side `--X--`
-- test inner space
+- test inner spaces at mid point
   - size 2 - 2nd row has one inner space `X-X`
   - size 3 - 3rd row has three inner spaces `X---X`
   - size 4 - 4th row has five inner spaces `X-----X`
