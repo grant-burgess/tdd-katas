@@ -4,16 +4,9 @@ After inputting a desired size, prints out a diamond to the console.
 
 Demonstrates how to incrementally build and test instead of "going for the gold" as Uncle Bob says.
 
-- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/diamond/src/main/java/com/grantburgess/)
-- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/diamond/src/test/java/com/grantburgess/)
+- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/diamond/src/main/java/com/grantburgess/Diamond.java)
+- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/diamond/src/test/java/com/grantburgess/DiamondTest.java)
 
-### Score calculation
-- Regular
-  - first two balls in frame
-- Spare
-  - 10 + first ball after spare
-- Strike
-  - 10 + first two balls after strike
   
 ### Tests
 - zero length diamond

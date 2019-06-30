@@ -1,7 +1,6 @@
 package com.grantburgess;
 
 public class Diamond {
-
     public static final String SYMBOL = "X";
     public static final String PADDING = " ";
     private final int size;
@@ -30,40 +29,45 @@ public class Diamond {
         return diamond;
     }
 
+    private void makeHeader() {
+        String outerPadding = makePadding(size - 1);
+        diamond[0] = outerPadding + SYMBOL + outerPadding;
+    }
+
     private void makeRows() {
         for (int row = 1; row < size; row++)
             makeRow(row);
 
-        int currentRow = size;
-        for (int i = size - 2; i >= 0; i--) {
-            diamond[currentRow++] = diamond[i];
-        }
+        mirrorRows();
     }
 
     private void makeRow(int row) {
-        String outerPadding = createOuterPadding((size - 1) - row);
+        String outerPadding = createOuterPadding(row);
         String innerPadding = createInnerPadding(row);
         diamond[row] = outerPadding + SYMBOL + innerPadding + SYMBOL + outerPadding;
     }
 
     private String createInnerPadding(int row) {
-        String result = "";
-        for (int i = 0; i < (row * 2) - 1; i++) {
-            result += PADDING;
-        }
-        return result;
+        return makePadding((row * 2) - 1);
     }
 
-    private void makeHeader() {
-        String outerPadding = createOuterPadding(size - 1);
-        diamond[0] = outerPadding + SYMBOL + outerPadding;
+    private String createOuterPadding(int row) {
+        return makePadding((size - 1) - row);
     }
 
-    private String createOuterPadding(int until) {
+    private String makePadding(int until) {
         String result = "";
         for (int i = 0; i < until; i++) {
             result += PADDING;
         }
         return result;
+    }
+
+    private void mirrorRows() {
+        int currentRow = size;
+
+        for (int i = size - 2; i >= 0; i--) {
+            diamond[currentRow++] = diamond[i];
+        }
     }
 }
