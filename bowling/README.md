@@ -4,7 +4,7 @@ Simple bowling game score calculator.
 
 ### Score calculation
 - Regular
- - first two balls in frame
+  - first two balls in frame
 - Spare
   - 10 + first ball after spare
 - Strike
