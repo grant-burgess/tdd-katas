@@ -2,6 +2,9 @@
 
 Simple bowling game score calculator.
 
+- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/bowling/src/main/java/com/grantburgess/Game.java)
+- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/bowling/src/test/java/com/grantburgess/GameTest.java)
+
 ### Score calculation
 - Regular
   - first two balls in frame
