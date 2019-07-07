@@ -21,7 +21,7 @@ Tips
 - two values pushed, popping one, size is one
   - this is likely the first point where you need to store the element pushed. See if you can get away with not using an array
 - pushing one and two, two and one is popped
-  - this is the point where you need to use and array. See if you can do this with least amount of key strokes.
+  - this is the point where you need to use an array. See if you can do this with least amount of key strokes.
 - stack created with negative capacity throws illegal capacity
 - pushing one, calling top returns one, stack is still size one
 - calling top on an empty stack throws empty
