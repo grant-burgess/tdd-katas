@@ -2,14 +2,15 @@
 
 The classic Stack kata.
 
+- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/stack/src/main/java/com/grantburgess/BoundedStack.java)
+- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/stack/src/test/java/com/grantburgess/StackTest.java)
+
+
 Tips
 - don't go for the gold, slowly build up your tests and production code
 - remember, Red, Green and Refactor. Only write enough code to pass the test, no refactoring while trying to go green. 
 - Don't only refactor your production code but test code as well
 - keep it simple, if you get stuck then back track a couple of steps and try again.
-
-- [Production code](https://github.com/grant-burgess/tdd-katas/blob/master/stack/src/main/java/com/grantburgess/BoundedStack.java)
-- [Tests](https://github.com/grant-burgess/tdd-katas/blob/master/stack/src/test/java/com/grantburgess/StackTest.java)
 
 ### Tests
 - stack empty upon creation
