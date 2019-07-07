@@ -21,7 +21,7 @@ Tips
 - two values pushed, popping one, size is one
   - this is likely the first point where you need to store the element pushed. See if you can get away with not using an array
 - pushing one and two, two and one is popped
-  - this is the point where you need to use an array. See if you can do this with least amount of key strokes.
+  - this is the point where you need to use an array. See if you can do this with the least amount of key strokes.
 - stack created with negative capacity throws illegal capacity
 - pushing one, calling top returns one, stack is still size one
 - calling top on an empty stack throws empty
@@ -30,6 +30,6 @@ Tips
 
 
 ### Nice to have tests
-A zero capacity stack has a pre-defined behaviour. We may choose to extract and interface and split out into a bounded and zero capacity stack.
+A zero capacity stack has a pre-defined behaviour. We may choose to extract an interface and split out into a bounded and zero capacity stack.
 
-I chose to use the [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner) with the test class
+I chose to use the [Hierarchical Context Runner](https://github.com/bechte/junit-hierarchicalcontextrunner) within the test class for the zero capacity stack
